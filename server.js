@@ -31,7 +31,7 @@ async function criarBanco(){
         id INT PRIMARY KEY AUTO_INCREMENT,
         tutor VARCHAR(100) NOT NULL,
         pet VARCHAR(100) NOT NULL,
-        especie ENUM('Cachorro', 'Gato', 'Outro') NOT NULL
+        especie ENUM('Cachorro', 'Gato', 'Outro') NOT NULL,
         servico VARCHAR(100) NOT NULL,
         valor DECIMAL (10,2) NOT NULL,
         data_atendimento DATE NOT NULL,
