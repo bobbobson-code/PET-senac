@@ -35,7 +35,7 @@ async function criarBanco(){
         servico VARCHAR(100) NOT NULL,
         valor DECIMAL (10,2) NOT NULL,
         data_atendimento DATE NOT NULL,
-        criacao_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP)
+        criacao_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     ) ENGINE=InnoDB`)
     
     await db.execute(`CREATE TABLE IF NOT EXISTS usuario(
