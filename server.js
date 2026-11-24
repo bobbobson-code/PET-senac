@@ -171,7 +171,7 @@ async function conectarPython(endpoint, atendimentos,res, tipo) {
     if(!resp.ok){
         throw new Error(resp.erro)
     }
-    const arquivo = buffer.from(await resp.arrayBuffer())
+    const arquivo = Buffer.from(await resp.arrayBuffer())
     if(tipo === 'pdf'){
         res.setHeader('Content-Type', 'application/pdf')
         res.setHeader('Content-Disposition', "attachment; filename='relatorio-petshop.pdf'")
